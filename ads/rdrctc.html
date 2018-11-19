@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Phone Call</title>  
+	<!-- Global site tag (gtag.js) - AdWords: 794718358 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-794718358"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-794718358');
+</script>
+  </head>
+  <body>
+    <img src="https://fasearily-formalian.com/conversion.gif?cid=OPTIONAL&payout=OPTIONAL&txid=OPTIONAL" width="1" height="1"/> 
+
+   <script>
+    function GetNumber(number, tagId, firstTime)
+    {
+	     if(firstTime)
+			window.pnumber = number;
+			//alert("Your Ringba phone number is: " + window.pnumber + ". Please call it to test!");
+			location.href="tel:+" + window.pnumber ;
+
+    }
+
+
+    (function(e,d) {
+
+        var ringba_com_tag="JSc644b6a979554422b25119a42e1505bc";
+        var _sc = d.getElementsByTagName('script'), _s = _sc[_sc.length - 1];
+
+        e._rgba = e._rgba || { q: [] }; e._rgba.q.push({ tag: ringba_com_tag, cb: GetNumber, numberClass: "phNumber", render: false, script: _s });
+
+        if (!(e._rgba.loading = !!e._rgba.loading)) {
+            var sc = d.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+            sc.src = '//js.callcdn.com/js_v2/min/ringba.com.js';
+            var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
+            e._rgba.loading = true;
+        }
+    })(window,document);
+  </script>
+
+ <!-- Start of Ringba.com Call Tracking tag -->
+<!-- <script type="text/javascript" src="//js.callcdn.com/js/min/ringba.com.js"></script>
+<script>
+    (function(){
+        ringba.campaign('CA76996a75a6964ad7a37ba32c21e806e7');
+        ringba.getNumber({
+            // Tags can be specified by adding the tag:'value' and will be tracked for every impression.
+            landingPageId:document.referrer!= '' ? document.referrer : 'domain not found'
+            }, 
+            function(numberPoolNumber){
+            	numberPoolNumber = numberPoolNumber.replace(/[^-0-9]/gim,'');
+
+               // Phone numbers will be inserted into all HTML tags with the class 'phone-number'
+  	            location.href="tel:+" + numberPoolNumber;
+            }, 
+            function(err){
+              console.log('Error function - Number not received.');
+            }
+            );
+                 
+        })();
+</script>
+  -->
+<!-- End of Ringba.com Call Tracking tag -->
+  </body>
+</html>
